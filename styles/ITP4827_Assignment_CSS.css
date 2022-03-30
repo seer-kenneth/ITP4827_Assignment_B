@@ -1,0 +1,271 @@
+* {
+	cursor: url(../images/cursor.png), default;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	background: #f6f7bc;
+	background-image: url(../images/flower.png);
+}
+h1 {
+	font-weight: 500px;
+}
+.f1, .f10 {
+	width: 500px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #48b302;
+	text-align: center;
+}
+.f1 h1, .f10 h1, .rating h1, .rating form header {
+	color: #acf377;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	border: 2px solid #acf377;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+	width: 250px;
+	border-color: white;
+}
+small, span, label, .f10 p {
+	color: #acf377;
+}
+input[type="submit"], button {
+	border: 2px solid #acf377;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+input[type="submit"]:hover, button:hover {
+	background: #acf377;
+	font-size: 14pt;
+}
+.f1 h1 {
+	color: #acf377;
+	font-weight: 500px;
+}
+.b2 h1 {
+	color: #48b302;
+	font-weight: 500px;
+}
+.b2 h2 {
+	color: #48b302;
+	font-weight: 400px;
+}
+.b2 td {
+	text-align: center;
+	color: #008c49;
+}
+.b2 img:hover, .back img:hover {
+	transform: scale(1.2);
+}
+.b2 .vs1 img, .b2 .vs2 img {
+	border-radius: 15px;
+}
+.b2 .vs1 p, .b2 .vs2 p {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.miku h1, .rin h1, .len h1, .luka h1, .kaito h1, .meiko h1 {
+	text-align: center;
+}
+.miku, .miku p {
+	color: #52c7ad;
+}
+.rin, .rin p {
+	color: #ffa500;
+}
+.len, .len p {
+	color: #d6d600;
+}
+.luka, .luka p {
+	color: #ffaadd;
+}
+.kaito, .kaito p {
+	color: blue;
+}
+.meiko, .meiko p {
+	color: red;
+}
+.vs_full img {
+	border-radius: 30px;	
+}
+.vs_full img:hover {
+	opacity: 1;
+	box-shadow: 0 0 20px #952;
+}
+.vs_thanks img {
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.vs_thanks img:hover {
+	opacity: 1;
+	box-shadow: 0 0 20px #39C5BB;
+}
+.rating {
+	width: 400px;
+	background: #0cad32;
+	padding: 20px 30px;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.rating .star input {
+	display: none;
+}
+.star label {
+	font-size: 40px;
+	color: #444;
+	padding: 10px;
+	float: right;
+	transition: all 0.2s ease;
+}
+.rating input:not(:checked) ~ label:hover, .rating input:not(:checked) ~ label:hover ~ label {
+	color: #fd4;
+}
+.rating input:checked ~ label {
+	color: #fd4;
+}
+.rating input#rate-5:checked ~ label {
+	color: #fe7;
+	text-shadow: 0 0 20px #952;
+}
+.rating form {
+	display: none;
+}
+.rating input:checked ~ form {
+	display: block;
+}
+.rating form header {
+	width: 100%;
+	font-size: 25px;
+	font-weight: 500%;
+	margin: 5px 0 20px 0;
+	transition: all 0.2s ease;
+}
+.rating form textarea {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	outline: none;
+	border: 1px solid #333;
+	background: #b3f4fc;
+	padding: 10px;
+	font-size: 17px;
+	color: #008a29;
+	resize: none;
+}
+.rating input#rate-1:checked ~ form header:before {
+	content: "Boring. (☍﹏⁰) ";
+}
+.rating input#rate-2:checked ~ form header:before {
+	content: "Not really attractive. XwX";
+}
+.rating input#rate-3:checked ~ form header:before {
+	content: "Good. (´⊙ω⊙`)";
+}
+.rating input#rate-4:checked ~ form header:before {
+	content: "Fairly awesome. (ﾟ∀ﾟ)";
+}
+.rating input#rate-5:checked ~ form header:before {
+	content: "Extremely amazing!!! >w<";
+}
+.cursor {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border: 2px solid #56a1fc;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	transform: translate(-17.5%, -20%);
+	transition: 0.5s;
+}
+.cursor2 {
+	position: fixed;
+	width: 8px;
+	height: 8px;
+	background-color: #e5eb34;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	transform: translate(-17.5%, -20%);
+	transition: 0.15s;
+}
+.f1:hover ~ .cursor {
+    transform: translate(-17.5%, -20%) scale(1.5);
+    border: 2px solid #56a1fc;
+    background-color: #82af44;
+    opacity: 0.5;
+}
+.f1:hover ~ .cursor2 {
+    opacity: 0;
+}
+#easter-egg {
+    position: static;
+    top: 50%;
+    left: 50%;
+    font-size: 32px;
+    animation: jump 1.2s infinite;
+}
+@keyframes jump {
+    0% { transform: translate(-20%, -20%) scale(1.25, 0.75); }
+    50% { transform: translate(-20%, -60%) scale(1, 1); }
+    55% { transform: translate(-20%, -60%) rotate(15deg); }
+    60% { transform: translate(-20%, -60%) rotate(-15deg); }
+    65% { transform: translate(-20%, -60%) rotate(15deg); }
+    70% { transform: translate(-20%, -60%) rotate(-15deg); }
+    100% { transform: translate(-20%, -20%) scale(1.25, 0.75); }
+}
+@media only screen and (max-width: 800px) {
+	body {
+		background: #c7f9a6;
+		background-image: url(../images/star.png);
+	}
+	table, td, tr {
+		display: block;
+	}
+	.f1, .f10 {
+		top: 100%;
+	}
+	.miku p, .rin p, .len p, .luka p, .kaito p, .meiko p, .miku ul, .rin ul, .len ul, .luka ul, .kaito ul, .meiko ul {
+		float: left;
+	}
+	.miku img, .rin img, .len img, .luka img, .kaito img, .meiko img {
+		clear: both;
+	}
+}
+@media only screen and (max-width: 500px) {
+	body {
+		background: #adcdff;
+		background-image: url(../images/confetti.png);
+	}
+	.f1, .f10 {
+		top: 200%;
+	}
+}

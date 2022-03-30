@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Megurine Luka</title>
+		<link rel="stylesheet" type="text/css" href="styles/ITP4827_Assignment_CSS.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<script type="text/javascript" src="scripts/ITP4827_Assignment_JS.js"></script>
+	</head>
+	<body class="luka">
+		<table width="1000" height="100" border="0">
+			<tr>
+				<td width="250" height="100"><h1>Megurine Luka</h1></td>
+				<td width="250" height="100">
+					<a href="index.html" target="_self" class="back">
+						<img src="images/back_to_home_page.png" width="170" height="100">
+					</a>
+				</td>
+				<td rowspan="2" width="500" height="100">
+					<h3>Megurine Luka is a humanoid anime-style character persona voiced by a singing synthesizer application 
+						developed by Crypton Future Media.</h3>
+					<ul>
+						<li>Initial release: 30 January 2009</li>
+						<li>Age: 20</li>
+						<li>Height: 162 cm</li>
+						<li>Weight: 45 kg</li>
+						<li>Suggested tempo range: 65 - 145 BPM</li>
+						<li>Suggested vocal range: D3 - D5</li>
+						<li>Famous songs: 
+							<a href="https://www.nicovideo.jp/watch/nm6049209" target="_self">Double Lariat</a>, 
+							<a href="https://www.nicovideo.jp/watch/sm5992615" target="_self">RIP=RELEASE</a>, 
+							<a href="https://www.nicovideo.jp/watch/sm7528841" target="_self">Just Be Friends</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="500" colspan="2" class="vs_full" style="text-align:center">
+					<img src="images/megurine_luka_full.png" width="400" height="254">
+				</td>
+			</tr>
+			<tr>
+                <td colspan="3" align="center">
+                    <iframe width="727" height="409" src="https://www.youtube.com/embed/fobQOAOAdoE" title="YouTube video player"
+                    	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    	allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="3" align="center">
+            		<div class="rating">
+            			<div class="star">
+            				<h1>Rate for</h1>
+            				<h1>Megurine Luka \OwO/</h1>
+	            			<input type="radio" name="rate" id="rate-5" />
+		            		<label for="rate-5" class="fa fa-star"></label>
+    		        		<input type="radio" name="rate" id="rate-4" />
+        		    		<label for="rate-4" class="fa fa-star"></label>
+            				<input type="radio" name="rate" id="rate-3" />
+            				<label for="rate-3" class="fa fa-star"></label>
+            				<input type="radio" name="rate" id="rate-2" />
+		            		<label for="rate-2" class="fa fa-star"></label>
+    		        		<input type="radio" name="rate" id="rate-1" />
+        		    		<label for="rate-1" class="fa fa-star"></label>
+        		    		<form id="rating-form" action="thanks_rating.html" onSubmit="submitRating()">
+        		    			<header></header>
+        		    			<textarea cols="30" placeholder="Please share your thoughts about her. =w="></textarea>
+        		    			<button type="submit">Submit</button>
+        		    		</form>
+        		    	</div>
+            		</div>
+            	</td>
+            </tr>
+		</table>
+		<div class="cursor"></div>
+        <div class="cursor2"></div>
+        <script>cursorAnimation();</script>
+	</body>
+</html>

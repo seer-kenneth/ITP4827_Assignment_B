@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sign Up</title>
+		<link rel="stylesheet" type="text/css" href="styles/ITP4827_Assignment_CSS.css">
+		<script type="text/javascript" src="scripts/ITP4827_Assignment_JS.js"></script>
+	</head>
+	<body>
+		<form class="f10" id="signup-form" action="thanks_signup.html" onSubmit="return submitSignUpForm()">
+			<h1>Sign Up</h1>
+			<input type="text" name="name" id="name" placeholder="Name" pattern="^[A-Za-z ]+$" required="required" />
+			<span>Gender: </span>
+			<input type="radio" name="gender" id="male" value="M" required="required" />
+			<label for="male">Male</label>
+			<input type="radio" name="gender" id="female" value="F" />
+			<label for="female">Female</label>
+			<input type="email" name="email" id="email" placeholder="Email" required="required" />
+			<p>Favourite virtual singer(s):</p>
+			<input type="checkbox" id="miku_c" name="miku_c" value="miku" />
+			<label for="miku_c">Hatsune Miku</label>
+			<input type="checkbox" id="rin_c" name="rin_c" value="rin" />
+			<label for="rin_c">Kagamine Rin</label>
+			<input type="checkbox" id="len_c" name="len_c" value="len" />
+			<label for="len_c">Kagamine Len</label><br>
+			<input type="checkbox" id="luka_c" name="luka_c" value="luka" />
+			<label for="luka_c">Megurine Luka</label>
+			<input type="checkbox" id="kaito_c" name="kaito_c" value="kaito" />
+			<label for="kaito_c">KAITO</label>
+			<input type="checkbox" id="meiko_c" name="meiko_c" value="meiko" />
+			<label for="meiko_c">MEIKO</label>
+			<input type="submit" name="login" value="Submit" />
+			<button type="reset" name="reset" value="Reset">Reset</button>
+			<td width="250" height="100">
+				<a href="index.html" target="_self" class="back">
+					<img src="images/back_to_home_page.png" width="170" height="100">
+				</a>
+			</td>
+		</form>
+		<div class="cursor"></div>
+        <div class="cursor2"></div>
+        <script>cursorAnimation();</script>
+	</body>
+</html>

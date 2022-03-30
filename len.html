@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kagamine Len</title>
+		<link rel="stylesheet" type="text/css" href="styles/ITP4827_Assignment_CSS.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<script type="text/javascript" src="scripts/ITP4827_Assignment_JS.js"></script>
+	</head>
+	<body class="len">
+		<table width="1000" height="100" border="0">
+			<tr>
+				<td width="250" height="100"><h1>Kagamine Len</h1></td>
+				<td width="250" height="100">
+					<a href="index.html" target="_self" class="back">
+						<img src="images/back_to_home_page.png" width="170" height="100">
+					</a>
+				</td>
+				<td rowspan="2" width="500" height="100">
+					<h3>The names of Kagamines are derived from the concept of 'left' and 'right', like in stereophonic sound. 
+						Their surnames came from the Japanese words for "mirror" (kagami) and "sound" (ne)
+						as they are each other's mirror image.</h3>
+					<ul>
+						<li>Initial release: 27 December 2007</li>
+						<li>Age: 14</li>
+						<li>Height: 156 cm</li>
+						<li>Weight: 47 kg</li>
+						<li>Suggested tempo range: 55 - 170 BPM</li>
+						<li>Suggested vocal range: D3 - C#5</li>
+						<li>Famous songs: 
+							<a href="https://www.youtube.com/watch?v=NwnyPIbt1BA" target="_self">Servant of Evil</a>, 
+							<a href="https://www.youtube.com/watch?v=qHjIfbO-bP8" target="_self">Dream Eating Monochrome Baku</a>, 
+							<a href="https://www.youtube.com/watch?v=myEsj-qf73A" target="_self">Fire◎Flower</a>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="500" colspan="2" class="vs_full" style="text-align:center">
+					<img src="images/kagamine_len_full.png" width="400" height="254">
+				</td>
+			</tr>
+			<tr>
+                <td colspan="3" align="center">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/cwLlHFMlBNQ" title="YouTube video player"	
+                 		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    	allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="3" align="center">
+            		<div class="rating">
+            			<div class="star">
+            				<h1>Rate for</h1>
+            				<h1>Kagamine Len \OwO/</h1>
+	            			<input type="radio" name="rate" id="rate-5" />
+		            		<label for="rate-5" class="fa fa-star"></label>
+    		        		<input type="radio" name="rate" id="rate-4" />
+        		    		<label for="rate-4" class="fa fa-star"></label>
+            				<input type="radio" name="rate" id="rate-3" />
+            				<label for="rate-3" class="fa fa-star"></label>
+            				<input type="radio" name="rate" id="rate-2" />
+		            		<label for="rate-2" class="fa fa-star"></label>
+    		        		<input type="radio" name="rate" id="rate-1" />
+        		    		<label for="rate-1" class="fa fa-star"></label>
+        		    		<form id="rating-form" action="thanks_rating.html" onSubmit="submitRating()">
+        		    			<header></header>
+        		    			<textarea cols="30" placeholder="Please share your thoughts about him. =w="></textarea>
+        		    			<button type="submit">Submit</button>
+        		    		</form>
+        		    	</div>
+            		</div>
+            	</td>
+            </tr>
+		</table>
+		<div class="cursor"></div>
+        <div class="cursor2"></div>
+        <script>cursorAnimation();</script>
+	</body>
+</html>
